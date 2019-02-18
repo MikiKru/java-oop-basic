@@ -33,7 +33,7 @@ public class CarMain {
                     break;
                 case 2:
                     // odwołanie się do składowej statycznej
-                    System.out.println(CarController.index);
+                    System.out.println(CarController.getIndex());
                     cc.getCars();
                     break;
                 case 0:
