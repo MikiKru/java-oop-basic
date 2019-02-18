@@ -28,12 +28,21 @@ public class Company {
             System.out.println(employees[i]);
         }
     }
-//    public Employee getEmployeeByPESEL(String PESEL){
-//
-//    }
-//    public void setSalary(String PESEL, double newSalary){
-//
-//    }
+    public Employee getEmployeeByPESEL(String PESEL_search){
+        for (int i = 0; i < index; i++){
+            if(employees[i].PESEL.equals(PESEL_search)){
+                return employees[i];
+            }
+        }
+        return null;
+    }
+    public void setSalary(String PESEL_search, double newSalary){
+        for (int i = 0; i < index; i++){
+            if(employees[i].PESEL.equals(PESEL_search)){
+                employees[i].salary_net = newSalary;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         Company c = new Company();
@@ -41,6 +50,10 @@ public class Company {
         c.addEmployee("M","K", "1233221123", "2000-02-02","2019-01-01", 10000);
         c.addEmployee("A","A", "5553221123", "2001-02-02","2019-01-01", 14000);
         c.addEmployee("B","B", "6663221123", "2002-02-02","2019-01-01", 12000);
+        c.getAllEmployees();
+        System.out.println("Wyszukano: " + c.getEmployeeByPESEL("333"));
+        System.out.println("Wyszukano: " + c.getEmployeeByPESEL("6663221123"));
+        c.setSalary("6663221123", 20000);
         c.getAllEmployees();
     }
 
