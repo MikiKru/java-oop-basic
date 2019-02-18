@@ -28,6 +28,12 @@ public class Company {
             System.out.println(employees[i]);
         }
     }
+//    public Employee getEmployeeByPESEL(String PESEL){
+//
+//    }
+//    public void setSalary(String PESEL, double newSalary){
+//
+//    }
 
     public static void main(String[] args) {
         Company c = new Company();
