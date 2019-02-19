@@ -5,11 +5,19 @@ public class Car {
     double price;
     int year;
 
+    public Car() { }
+
+    public Car(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
     public Car(String brand, String model, double price, int year) {
         this.brand = brand;
         this.model = model;
         this.price = price;
         this.year = year;
+
     }
 
     @Override

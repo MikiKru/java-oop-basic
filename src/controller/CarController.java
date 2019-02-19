@@ -1,6 +1,6 @@
 package controller;
 
-import model.Car;
+import model.*;
 
 public class CarController {
     private Car [] cars = new Car[100];
@@ -15,6 +15,8 @@ public class CarController {
     // ----------------------------------------
     public void purchaseCar(String brand, String model, double price, int year){
         Car c = new Car(brand,model,price,year);
+        Car c1 = new Car();
+        Car c2 = new Car("X","Y");
         cars[getIndex()] = c;
         incrementIndex();
     }
