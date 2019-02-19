@@ -36,12 +36,24 @@ public class DateTimeController {
         }
         return mondayCounter;
     }
+    public void myBirthday(String d){
+        LocalDate date = LocalDate.parse(d);
+        DayOfWeek myDay = date.getDayOfWeek();
+        for(LocalDate ld = date; ld.isBefore(LocalDate.now()); ld = ld.plusYears(1)){
+            if(ld.getDayOfWeek() == myDay){
+                System.out.println(ld);
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
         DateTimeController dtc = new DateTimeController();
         System.out.println("Twój wiek dokładny to: " + dtc.getAgeFromStringDate("2000-10-01") + " lat");
         System.out.println("Wcześniejsza data: " + dtc.dateCompatator("2000-02-20", "2001-05-05"));
         System.out.println("Wcześniejsza data: " + dtc.dateCompatator("2010-02-20", "2001-05-05"));
         System.out.println("Liczba poniedziałków między datami:" + dtc.getMondaysBetweenDates("2019-02-19", "2019-03-05"));
+        dtc.myBirthday("1981-07-25"); // sobota
     }
 
 }
