@@ -11,7 +11,7 @@ public class UserController {
 
     public void addUser(String name, String lastname, String login, String password, String email, String phone, LocalDate birth_date, LocalDateTime registration_date_time){
         User u = new User(name, lastname, login, password, email, phone, birth_date, registration_date_time);
-//        System.out.println(u);
+        u.setRegistration_date_time(u.getRegistration_date_time().plusHours(1));
         users[index] = u;
         index++;
     }
@@ -20,4 +20,6 @@ public class UserController {
             System.out.println(users[i]);
         }
     }
+
+
 }
