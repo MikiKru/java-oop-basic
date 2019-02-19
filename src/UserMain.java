@@ -12,5 +12,11 @@ public class UserMain {
         uc.addUser("B", "B", "b", "b", "bb@bb.pl", "333333222", LocalDate.of(1999,12,22), LocalDateTime.now());
         uc.addUser("C", "C", "c", "c", "cc@cc.pl", "333333222", LocalDate.of(1967,03,13), LocalDateTime.now());
         uc.getAllUsers();
+        System.out.println("Test dat");
+        System.out.println("User pierwszy starszy od drugiego: " + uc.birthdateComparator(0,1));
+        System.out.println("User pierwszy starszy od drugiego: " + uc.birthdateComparator(1,2));
+        System.out.println("Posortowane po dacie: ASC");
+        uc.sortByBirhtdate();
+        uc.getAllUsers();
     }
 }

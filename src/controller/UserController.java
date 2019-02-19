@@ -30,5 +30,22 @@ public class UserController {
     public boolean birthdateComparator(int index1, int index2){
         return users[index1].getBirth_date().isBefore(users[index2].getBirth_date());
     }
+    // sortowanie po dacie
+    public void sortByBirhtdate(){
+        for(int j = 0; j < index; j++) {
+            for (int i = 1; i < index; i++) {
+                // sprawdzenie czy pierwszy jest młodszy od drugiego
+                if (!birthdateComparator(i - 1, i)) {
+                    // tymczasowy element pierwszy w porównaniu
+                    User u1 = users[i - 1];
+                    // tymczasowy element drugi w porównaniu
+                    User u2 = users[i];
+                    // zamiana miejscami w komórkach tablicy
+                    users[i - 1] = u2;
+                    users[i] = u1;
+                }
+            }
+        }
+    }
 
 }
