@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bacb3fb-f3a6-4274-8560-b527633117a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/DateTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DateTimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegExpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegExpController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReqExpMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -33,6 +33,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/RegExpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -64,6 +73,7 @@
         <option value="$PROJECT_DIR$/src/UserMain.java" />
         <option value="$PROJECT_DIR$/src/controller/DateTimeController.java" />
         <option value="$PROJECT_DIR$/src/ReqExpMain.java" />
+        <option value="$PROJECT_DIR$/src/controller/RegExpController.java" />
       </list>
     </option>
   </component>
@@ -116,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550586102426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550587735300" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -132,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReqExpMain">
+  <component name="RunManager" selected="Application.RegExpController">
     <configuration name="CarMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CarMain" />
       <module name="OOP-basic" />
@@ -140,8 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Company" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.Company" />
+    <configuration name="DateTimeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controller.DateTimeController" />
       <module name="OOP-basic" />
       <extension name="coverage">
         <pattern>
@@ -153,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.DateTimeController" />
+    <configuration name="RegExpController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controller.RegExpController" />
       <module name="OOP-basic" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegExpController" />
         <item itemvalue="Application.ReqExpMain" />
         <item itemvalue="Application.DateTimeController" />
         <item itemvalue="Application.UserMain" />
         <item itemvalue="Application.CarMain" />
-        <item itemvalue="Application.Company" />
       </list>
     </recent_temporary>
   </component>
@@ -202,12 +212,12 @@
       <updated>1550480552293</updated>
       <workItem from="1550480558467" duration="12001000" />
       <workItem from="1550505887630" duration="101000" />
-      <workItem from="1550562500923" duration="17125000" />
+      <workItem from="1550562500923" duration="18539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36754000" />
+    <option name="totallyTimeSpent" value="38168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="0" />
@@ -222,7 +232,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.054959785" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22788204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,6 +407,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RegExpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
